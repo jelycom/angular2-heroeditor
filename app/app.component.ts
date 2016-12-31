@@ -6,7 +6,9 @@ import {Hero} from "./hero";
   template: `<h1>{{title}}</h1>
             <h2>{{hero.name}} Details</h2>
             <div><label>id:</label>{{hero.id}}</div>
-            <div><label>name:</label>{{hero.name}}</div>
+            <div><label>name:</label>
+            <input placeholder="name" value="{{hero.name}}"/>
+            </div>
 `,
 })
 export class AppComponent  {
