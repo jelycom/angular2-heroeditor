@@ -18,7 +18,7 @@ const HEROES:Hero[]=[
   template: `<h1>{{title}}</h1>
             <h2>My Heroes</h2>
             <ul class="heroes">
-                <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+                <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero===selectHero">
                 <span class="badge">{{hero.id}}</span>
                 {{hero.name}}
 </li>
