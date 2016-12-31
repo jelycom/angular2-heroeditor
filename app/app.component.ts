@@ -7,7 +7,7 @@ import {Hero} from "./hero";
             <h2>{{hero.name}} Details</h2>
             <div><label>id:</label>{{hero.id}}</div>
             <div><label>name:</label>
-            <input placeholder="name" value="{{hero.name}}"/>
+            <input placeholder="name" [(ngModel)]="hero.name"/>
             </div>
 `,
 })
