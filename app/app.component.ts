@@ -23,11 +23,13 @@ const HEROES:Hero[]=[
                 {{hero.name}}
 </li>
 </ul>
+        <div *ngIf="selectHero">
             <h2>{{selectHero.name}} Details</h2>
             <div><label>id:</label>{{selectHero.id}}</div>
             <div><label>name:</label>
             <input placeholder="name" [(ngModel)]="selectHero.name"/>
-            </div>
+        </div>
+    </div>
 `,styles: [`
   .selected {
     background-color: #CFD8DC !important;
