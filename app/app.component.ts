@@ -3,7 +3,11 @@ import {Hero} from "./hero";
 
 @Component({
   selector: 'my-app',
-  template: `<h1>{{title}}</h1><h2>{{hero.name}} Details</h2>`,
+  template: `<h1>{{title}}</h1>
+            <h2>{{hero.name}} Details</h2>
+            <div><label>id:</label>{{hero.id}}</div>
+            <div><label>name:</label>{{hero.name}}</div>
+`,
 })
 export class AppComponent  {
   title = 'Tour Of Heroes';
