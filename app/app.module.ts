@@ -6,9 +6,10 @@ import {FormsModule} from "@angular/forms";
 import {HeroDetailComponent} from "./hero-detail.component";
 import {HeroService} from "./hero.service";
 import {AppComponent} from "./app.component";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
-  imports:      [ BrowserModule ,FormsModule],
+  imports:      [ BrowserModule ,FormsModule,RouterModule.forRoot([{path:'heroes',component:HeroesComponent}])],
   declarations: [ AppComponent,HeroesComponent ,HeroDetailComponent],
   providers:[HeroService],
   bootstrap:    [ AppComponent ]
